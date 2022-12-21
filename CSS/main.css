@@ -9,6 +9,72 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
+.btn {
+  width: 200px;
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  cursor: pointer;
+
+  display: block;
+
+  transition: .4s;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn.btn--brown {
+  color: #592b18;
+  border-color: #592b18;
+}
+
+.btn.btn--brown:hover {
+  color: #fff;
+  background-color: #592b18;
+}
+
+.btn.btn--reverse {
+  background-color: #333;
+  color: #FFF;
+}
+
+.btn.btn--reverse:hover {
+  background-color: transparent;
+  color: #333;
+}
+
+.btn.btn--gold {
+  color: #D9AA8A;
+  border-color: #D9AA8A;
+}
+
+.btn.btn--gold:hover {
+  color: #FFF;
+  background-color: #D9AA8A;
+}
+
+.btn.btn--white {
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.btn.btn--white:hover {
+  color: #333;
+  background-color: #FFF;
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -16,6 +82,8 @@ a {
   background-color: white;
 }
 
+
+/* ============================================================================= */
 
 /* header 시작 */
 header {
@@ -95,11 +163,13 @@ header .inner .headerNav .menu li .sub-menu li {
 
 header .inner .headerNav .menu li .sub-menu li > a { 
   color: black;
-  font-size: 14px;  
+  font-size: 14px;
+  font-weight: 10;  
 } 
 
 header .inner .headerNav .menu li .sub-menu li a:hover { 
-  color: rgb(250, 5, 145);
+  color: blue;
+  font-weight: 700;
 } 
 
 .menu-item-background {
@@ -117,13 +187,78 @@ header .inner .headerNav .menu li .sub-menu li a:hover {
   position: absolute;
   top: 100px;
   width: 100%;
-  height: 1000px;
-  background-color: orange;
+  height: 741px;
+
+  background-image: url("../IMG/section1_model.png");
 }
 
+.promotion .quotation365 {
+  position: absolute;
+  top: 100px;
+  left: 200px;
 
+  /* background-color: orange; */
+}
 
+.promotion .quotation365 .webQutn365 {
+  width: 200px;
+  height: 60px;
+  border-radius: 40px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  
+  background-color: #333;
 
+  cursor: pointer;
+}
+
+p.webQutn365--p1 {
+  color: #000;
+  margin-top: 20px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+p.webQutn365--p2 {
+  color: rgb(0, 183, 255);
+  margin-top: 20px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+p.webQutn365--p3 {
+  color: #000;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 10;
+}
+
+p.webQutn365--p4 {
+  color: #000;
+  margin-top: 5px;
+  font-size: 25px;
+  font-weight: 10;
+}
+
+p.webQutn365--p5 {
+  color: rgb(5, 16, 231);
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.promotion .btnGroup {
+  position: absolute;
+  width: 415px;
+  top: 430px;
+  left: 200px;
+
+  display: flex;
+  justify-content: space-between;
+}
 
 
 
