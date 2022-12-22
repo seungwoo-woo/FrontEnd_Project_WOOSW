@@ -562,3 +562,39 @@ section.ourProduction {
   height: 700px;
 }
 
+
+
+/* footer 시작 */
+footer {
+  display: flex;
+  align-items: center;
+  height: 140px;
+}
+
+footer div.footer-logo {
+  flex: 0.2;
+  padding-left: 50px;
+}
+
+footer div.footer-dist {
+  flex: 0.7;
+
+  padding-left: 200px;
+  padding-top: 0px;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: left;
+}
+
+footer div.footer-dist h2 {
+  margin: 10px 0;
+  color: #333;
+}
+
+
+footer div.footer-sns {
+  flex: 0.1;  
+  display: flex;
+  padding-right: 50px;
+  justify-content: space-around;
+}
