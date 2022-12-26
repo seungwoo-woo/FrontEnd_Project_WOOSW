@@ -104,5 +104,51 @@ window.addEventListener('scroll', function () {
     }
 
   }
-
 })
+
+
+new Swiper('.production-webQuotation365-dist .swiper', {
+  direction: 'horizontal', 
+  loop: true, 
+  autoplay: { // 자동 재생 여부
+  delay: 3500 // 5초마다 슬라이드 바뀜
+  },
+  
+  slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
+  spaceBetween: 10, // 슬라이드 사이 여백(간격) px
+  centeredSlides: true, // 1번 슬라이드가 가운데 보이기
+  
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   type: 'bullets',
+  // },
+
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
+});
+
+
+
+new Swiper('.production-webQuotation365 .swiper', {
+  direction: 'horizontal', 
+  loop: true, 
+  autoplay: { // 자동 재생 여부
+  delay: 3500 // 5초마다 슬라이드 바뀜
+  },
+  
+  slidesPerView: 1, // 한 번에 보여줄 슬라이드 개수
+  spaceBetween: 10, // 슬라이드 사이 여백(간격) px
+  centeredSlides: true, // 1번 슬라이드가 가운데 보이기
+  
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   type: 'bullets',
+  // },
+
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
+});
