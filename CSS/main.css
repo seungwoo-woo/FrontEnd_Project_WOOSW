@@ -140,13 +140,97 @@ header .inner {
   position: relative;
 }
 
+
+/* 반응형 시작 ================================================================================== */
+
+@media screen and (max-width: 1100px) {
+  
+  header .inner {
+    flex-direction: column;
+    width: 100%;
+    /* justify-content: flex-start; */
+  }
+
+  header .inner .logo {
+    /* height: 100px; */
+    padding-top: 5px;
+    margin-right: 300px; 
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: flex-start; */
+  }
+
+  header .inner .headerNav .menu { 
+    height: 50px;
+  }
+
+  section.information {
+    height: 1300px;
+  }
+
+  .information div.info-item {
+    top: 200px;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    width: 800px; 
+    
+
+  }
+
+  .information .info-item .infor-item-group {
+    flex-direction: column;
+    width: 800px;
+    padding-right: 0;
+  }
+
+  .information .info-item .infor-item-group > li {
+
+    width: 720px;
+
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+.information .info-item .infor-item-group > li h4.event { 
+  padding-bottom: 32px;
+}
+
+
+  .information > div.info-product {
+    top: 900px;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    width: 800px;
+  }
+  .information .info-product .info-product-item1-img {
+    display: none;
+  }
+
+  main section.aboutCo > div.aboutCoNo { 
+    display: none;
+  }
+
+  main section.ourProduction { 
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
+
+/* 반응형 끝 ================================================================================== */
+
+
+
 header .inner .logo { 
-  padding-left: 30px;
   cursor: pointer;
 }
 
 header .inner .headerNav .menu { 
-  height: 100px;
+  /* height: 100px; */
   display: flex;
   align-items: flex-end;
 
@@ -154,7 +238,7 @@ header .inner .headerNav .menu {
 }
 
 header .inner .headerNav .menu > li { 
-  padding: 0 25px 30px 25px;
+  padding: 70px 25px 10px 25px;
   font-size: 18px;
   position: relative;
 
@@ -175,8 +259,8 @@ header .inner .headerNav .menu > li::before {
   background-color: gray;
 
   position: absolute;
-  top: 2px;
-  left: 5px;
+  top: 72px;
+  left: -2px;
 }
 
 header .inner .headerNav .menu > li:first-child::before {
@@ -185,8 +269,8 @@ header .inner .headerNav .menu > li:first-child::before {
 
 header .inner .headerNav .menu li ul.sub-menu { 
   position: absolute;
-  top: 49px;
-  left: 0;
+  top: 100px;
+  left: 5px;
   width: 100%; 
   z-index: 2;
   display: none;
@@ -213,7 +297,7 @@ header .inner .headerNav .menu li .sub-menu li a:hover {
 
 .menu-item-background {
   width: 100%;
-  height: 150px;
+  height: 160px;
   z-index: 1;
   display: none;
 
@@ -229,16 +313,19 @@ header .inner .headerNav .menu li .sub-menu li a:hover {
   height: 741px;
 
   background-image: url("../IMG/section1_model.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .promotion .quotation365 {
   position: absolute;
   top: 100px;
-  left: 200px;
+  left: 150px;
 }
 
 .promotion .quotation365 .webQutn365 {
-  width: 200px;
+  width: 250px;
   height: 60px;
   border-radius: 40px;
   font-size: 25px;
@@ -291,7 +378,7 @@ p.webQutn365--p5 {
   position: absolute;
   width: 415px;
   top: 430px;
-  left: 200px;
+  left: 150px;
 
   display: flex;
   justify-content: space-between;
@@ -487,11 +574,15 @@ section.aboutCo {
   background-color: #fff;
 
   display: flex;
+
+  position: relative;
 }
 
 section.aboutCo div.aboutCoDist {
-  padding-left: 200px;
-  flex: 0.4;
+  /* padding-left: 200px; */
+  /* flex: 0.4; */
+  position: absolute;
+  left: 200px;
 }
 
 section.aboutCo div.aboutCoDist > h1 { 
@@ -523,10 +614,13 @@ section.aboutCo div.aboutCoDist > p {
 }
 
 section.aboutCo div.aboutCoNo {
-  padding-left: 100px;
+  /* padding-left: 100px;
   padding-top: 100px;
-  padding-bottom: 100px;
-  flex: 0.6;
+  padding-bottom: 100px; */
+  /* flex: 0.6; */
+  position: absolute;
+  left: 900px;
+  top: 170px;
 
   display: flex;
   flex-direction: column;
@@ -766,3 +860,22 @@ footer div.footer-sns {
   justify-content: space-around;
 }
 
+
+
+/* SCROLL TO TOP */
+#to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  z-index: 9;
+  width: 42px;
+  height: 42px;
+  background-color: gray;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

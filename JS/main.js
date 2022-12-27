@@ -104,7 +104,29 @@ window.addEventListener('scroll', function () {
     }
 
   }
-})
+
+
+
+  if (window.scrollY > 500) {
+    
+    // 상단으로 이동 버튼 보이기!
+    gsap.to(toTopEl, 0.6, {
+      opacity: 1,
+      x: 0 // x축 0px 지점으로 이동
+    });
+  } else {
+
+    // 상단으로 이동 버튼 숨기기!
+    gsap.to(toTopEl, 0.6, {
+      opacity: 0,
+      x: 100 // x축 100px 지점으로 이동
+    });
+  }
+
+
+});
+
+
 
 
 new Swiper('.production-webQuotation365-dist .swiper', {
@@ -151,4 +173,14 @@ new Swiper('.production-webQuotation365 .swiper', {
   //   nextEl: '.swiper-button-next',
   //   prevEl: '.swiper-button-prev',
   // },
+});
+
+
+
+// 최상단으로 이동하는 버튼
+const toTopEl = document.querySelector('#to-top');
+toTopEl.addEventListener('click', function () {
+  gsap.to(window, 0.6, {
+    scrollTo: 0 // 페이지의 0px 지점(최상단)으로 이동
+  });
 });
