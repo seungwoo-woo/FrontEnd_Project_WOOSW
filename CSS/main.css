@@ -80,6 +80,8 @@ img {
   margin: 0 auto;
 
   background-color: white;
+
+  text-align: center;
 }
 
 
@@ -148,16 +150,11 @@ header .inner {
   header .inner {
     flex-direction: column;
     width: 100%;
-    /* justify-content: flex-start; */
   }
 
   header .inner .logo {
-    /* height: 100px; */
     padding-top: 5px;
     margin-right: 300px; 
-    /* display: flex;
-    align-items: center; */
-    /* justify-content: flex-start; */
   }
 
   header .inner .headerNav .menu { 
@@ -168,26 +165,28 @@ header .inner {
     height: 1300px;
   }
 
+  section.information div.inner {
+    width: 600px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+  }
   .information div.info-item {
     top: 200px;
     left: 0px;
-    right: 0;
+    right: 0px;
     margin: auto;
-    width: 800px; 
-    
-
+    width: 600px;
   }
 
   .information .info-item .infor-item-group {
     flex-direction: column;
-    width: 800px;
+    width: 600px;
     padding-right: 0;
   }
 
   .information .info-item .infor-item-group > li {
-
-    width: 720px;
-
+    width: 520px;
     border-bottom: 1px solid #e5e5e5;
   }
 
@@ -201,24 +200,45 @@ header .inner {
     left: 0px;
     right: 0;
     margin: auto;
-    width: 800px;
+    width: 600px;
   }
+
   .information .info-product .info-product-item1-img {
     display: none;
   }
 
-  main section.aboutCo > div.aboutCoNo { 
+  section.aboutCo div.inner { 
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  section.aboutCo div.inner div.aboutCoNo { 
     display: none;
   }
+
 
   main section.ourProduction { 
     display: none;
   }
 
+
   footer {
+    flex-direction: column;
+  }
+
+  footer > div.footer-logo > h1 {
     display: none;
   }
 
+  footer > div.inner {
+    width: 100%;
+  }
+
+
+  footer > div.footer-sns > h1 {
+    display: none;
+  }
 }
 
 /* 반응형 끝 ================================================================================== */
@@ -393,10 +413,18 @@ p.webQutn365--p5 {
   background-color: rgb(30, 150, 245);
 }
 
-h1.info {
+.information div.inner {
   position: absolute;
-  top: 100px;
   left: 100px;
+  width: 1300px;
+  padding-top: 100px;
+  /* padding-left: 50px; */
+  background-color: rgb(30, 150, 245);
+  text-align: left;
+}
+
+h1.info {
+
   font-size: 50px;
   font-weight: 700;
   color: whitesmoke;
@@ -570,42 +598,48 @@ h1.info {
 
 /* main -- about Co. 시작 */
 section.aboutCo {
-  height: 700px;
+
+  height: 550px;
   background-color: #fff;
 
-  display: flex;
+  
+}
 
+section.aboutCo div.inner { 
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
   position: relative;
 }
 
-section.aboutCo div.aboutCoDist {
-  /* padding-left: 200px; */
-  /* flex: 0.4; */
-  position: absolute;
-  left: 200px;
+section.aboutCo div.inner div.aboutCoDist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-section.aboutCo div.aboutCoDist > h1 { 
-  margin-top: 200px;
+section.aboutCo div.inner div.aboutCoDist > h1 { 
+  /* margin-top: 200px; */
   font-size: 50px;
   font-weight: 700;
   color:rgb(0, 183, 255);
 }
 
-section.aboutCo div.aboutCoDist > h2 { 
+section.aboutCo div.inner div.aboutCoDist > h2 { 
   margin-top: 40px;
   margin-bottom: 40px;
   font-size: 25px;
   font-weight: 700;
 }
 
-section.aboutCo div.aboutCoDist > h3 { 
+section.aboutCo div.inner div.aboutCoDist > h3 { 
   margin-top: 15px;
   font-size: 18px;
   font-weight: 10;
 }
 
-section.aboutCo div.aboutCoDist > p { 
+section.aboutCo div.inner div.aboutCoDist > p { 
   margin-top: 40px;
   font-size: 30px;
   font-weight: 700;
@@ -618,9 +652,9 @@ section.aboutCo div.aboutCoNo {
   padding-top: 100px;
   padding-bottom: 100px; */
   /* flex: 0.6; */
-  position: absolute;
+  /* position: absolute;
   left: 900px;
-  top: 170px;
+  top: 170px; */
 
   display: flex;
   flex-direction: column;
@@ -629,8 +663,8 @@ section.aboutCo div.aboutCoNo {
 
 section.aboutCo div.aboutCoNo .aboutCoNo-item { 
   text-align: right;
-  margin-right: 200px;
-  padding-right: 50px;
+  /* margin-right: 200px; */
+  padding-right: 20px;
   height: 80px;
 
   border-bottom: 1px solid rgb(210, 210, 210);
@@ -829,25 +863,22 @@ footer {
 
 footer div.footer-logo {
   flex: 0.2;
-  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer div.footer-dist {
-  flex: 0.7;
+footer div.inner {
+  flex: 0.6;
+}
 
-  padding-left: 200px;
-  padding-top: 0px;
+footer div.inner h2 {
   font-size: 14px;
-  font-weight: 200;
-  text-align: left;
-}
-
-footer div.footer-dist h2 {
   margin: 10px 0;
   color: #333;
 }
 
-footer div.footer-dist > h2.footer-dist-coname {
+footer div.inner > h2.footer-dist-coname {
   font-size: 16px;
   color: blueviolet;
   font-weight: 700;
@@ -856,9 +887,12 @@ footer div.footer-dist > h2.footer-dist-coname {
 footer div.footer-sns {
   flex: 0.2;  
   display: flex;
-  padding-right: 50px;
-  justify-content: space-around;
 }
+
+footer div.footer-sns h1.sns { 
+  padding: 0 10px ;
+}
+
 
 
 
