@@ -711,7 +711,7 @@ div.production-webQuotation365 div.swiper {
 
 
 
-/* start our product 시작 ====================================================================*/
+/* main -- start our product 시작 ====================================================================*/
 .start-our-product {
   position: relative;
   width: 100%;
@@ -830,7 +830,7 @@ footer div.footer-sns h1.sns {
 
 
 
-/* SCROLL TO TOP */
+/* SCROLL TO TOP 시작 ===========================================================*/
 #to-top {
   position: fixed;
   bottom: 30px;

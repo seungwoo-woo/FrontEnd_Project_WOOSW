@@ -1,3 +1,5 @@
+
+// sub-menu 보이기 시작 ============================================================
 const memuEl = document.querySelector('.menu');
 const menuItemEl = document.querySelector('ul.sub-menu');
 const backGrdEl = document.querySelector('.menu-item-background');
@@ -15,6 +17,8 @@ memuEl.addEventListener('mouseleave', function () {
 });
 
 
+
+// 스크롤 이동 시, 화면 움직임 시작 ===========================================================
 const spyEls = document.querySelectorAll('section.scroll-spy');
 spyEls.forEach(function (spyEl) {
   // 메소드 체이닝
@@ -28,6 +32,7 @@ spyEls.forEach(function (spyEl) {
 
 
 
+// 숫자 카운트 시작 (scrollY 이용)=====================================================================
 let wasCountDown = 0;
 window.addEventListener('scroll', function () {
   
@@ -107,6 +112,7 @@ window.addEventListener('scroll', function () {
 
 
 
+  // ------------------------------------상단 이동 버튼 보이기 / 숨기기
   if (window.scrollY > 500) {
     
     // 상단으로 이동 버튼 보이기!
@@ -123,12 +129,11 @@ window.addEventListener('scroll', function () {
     });
   }
 
-
 });
 
 
 
-
+// Swiper 시작 ================================================================================
 new Swiper('.production-webQuotation365-dist .swiper', {
   direction: 'horizontal', 
   loop: true, 
@@ -150,7 +155,6 @@ new Swiper('.production-webQuotation365-dist .swiper', {
   //   prevEl: '.swiper-button-prev',
   // },
 });
-
 
 
 new Swiper('.production-webQuotation365 .swiper', {
@@ -177,7 +181,7 @@ new Swiper('.production-webQuotation365 .swiper', {
 
 
 
-// 최상단으로 이동하는 버튼
+// 최상단으로 이동하는 버튼 =================================================================
 const toTopEl = document.querySelector('#to-top');
 toTopEl.addEventListener('click', function () {
   gsap.to(window, 0.6, {
